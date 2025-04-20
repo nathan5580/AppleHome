@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan Wilcké — Privacy & App Info</title>
+    <!-- Google Font for synthwave vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base reset */
+        *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            font-family:'Orbitron',sans-serif;
+            color:#fff;
+            min-height:100vh;
+            background:radial-gradient(circle at bottom,#200027 0%,#050014 60%);
+            overflow-x:hidden;
+        }
+        /* Starfield dots overlay */
+        body::before{
+            content:"";
+            position:fixed;
+            inset:0;
+            background-image:
+                    radial-gradient(#ff00e0 1px,transparent 1px),
+                    radial-gradient(#00e0ff 1px,transparent 1px);
+            background-size:3px 3px,4px 4px;
+            background-position:0 0,50px 50px;
+            opacity:.05;
+            pointer-events:none;
+        }
+
+        .container{width:90%;max-width:960px;margin:0 auto;padding:4rem 0;}
+        h1{font-size:3rem;text-align:center;margin-bottom:3rem;text-shadow:0 0 10px #ff00e0,0 0 20px #ff00e0;}
+        section{margin-bottom:4rem;}
+        section h2{font-size:2rem;margin-bottom:1rem;text-shadow:0 0 8px #00e0ff;}
+        ul{margin-left:1.5rem;list-style:square;}
+        ul li{margin:.5rem 0;}
+        a{color:#00e0ff;text-decoration:none;}
+        a:hover{text-shadow:0 0 6px #00e0ff;}
+        a.button{
+            display:inline-block;padding:.75rem 1.5rem;border:2px solid #ff00e0;color:#ff00e0;transition:.3s;
+        }
+        a.button:hover{
+            background:#ff00e0;color:#050014;box-shadow:0 0 10px #ff00e0;
+        }
+        footer{text-align:center;font-size:.8rem;opacity:.8;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Nathan Wilcké — Privacy &amp; App Info</h1>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Welcome to the official information site for the <strong>Nathan&nbsp;Wilcké</strong> application. Here you'll find the privacy statement, data‑handling details, and terms of use required for App Store submission.</p>
+    </section>
+
+    <section id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>We take your data protection very seriously. Our application:</p>
+        <ul>
+            <li><strong>Collects no personal data</strong> without your explicit consent.</li>
+            <li>Does not require you to create an account.</li>
+            <li>Uses no third‑party advertising or tracking services.</li>
+            <li>Stores all data locally on your device and deletes it when you uninstall the app.</li>
+        </ul>
+        <p>If you have questions about privacy, contact us at <a href="mailto:privacy@nathanwilcke.com">privacy@nathanwilcke.com</a>.</p>
+    </section>
+
+    <section id="data">
+        <h2>Data Collection &amp; Usage</h2>
+        <p>In line with Apple's <a href="https://developer.apple.com/app-store/app-privacy-details/" target="_blank" rel="noopener">App Privacy Details</a>, we confirm that the app:</p>
+        <ul>
+            <li>Collects <em>none</em> of the data categories listed by Apple (e.g., location, contacts, identifiers).</li>
+            <li>Does not leverage any third parties for analytics.</li>
+        </ul>
+        <p>This statement will be updated if app features evolve. Last updated on <time datetime="2025-04-20">April 20, 2025</time>.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Have questions? We'd love to help.</p>
+        <p><a class="button" href="mailto:contact@nathanwilcke.com">Send an Email</a></p>
+    </section>
+
+    <footer>
+        © 2025 Nathan Wilcké. All rights reserved.
+    </footer>
+</div>
+</body>
+</html>
